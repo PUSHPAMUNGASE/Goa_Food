@@ -1,0 +1,198 @@
+/* Container for the PopularFood component */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    padding: 20px 0;
+  }
+  
+  /* Header for Popular Food */
+  h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Row of food items */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Each food item card */
+  .col-xl-4, .col-lg-4, .col-md-4, .col-sm-6 {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Equal size for images in each food item */
+  .col-xl-4 img, .col-lg-4 img, .col-md-4 img, .col-sm-6 img {
+    width: 100%;
+    height: 200px; /* Fixed height to ensure equal size */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Food name */
+  .col-xl-4 h4, .col-lg-4 h4, .col-md-4 h4, .col-sm-6 h4 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Food rating text */
+  .col-xl-4 p, .col-lg-4 p, .col-md-4 p, .col-sm-6 p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Hover effect for food item cards */
+  .col-xl-4:hover, .col-lg-4:hover, .col-md-4:hover, .col-sm-6:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Pagination styles */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 5px;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Grid */
+  @media (max-width: 1200px) {
+    .col-lg-4, .col-md-4 {
+      width: 32%; /* 3 items per row on large screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .col-lg-4, .col-md-4, .col-sm-6 {
+      width: 48%; /* 2 items per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .col-lg-4, .col-md-4, .col-sm-6 {
+      width: 100%; /* 1 item per row on mobile */
+    }
+  }
+  
+
+
+  /* Style for Food Cards */
+.food-card {
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .food-card:hover {
+    transform: scale(1.05); /* Slightly zoom in */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow effect */
+  }
+  
+  .food-img {
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .food-card:hover .food-img {
+    opacity: 0.85;
+  }
+  
+  .food-card h4 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .food-card p {
+    text-align: center;
+    color: #777;
+  }
+  
+  /* Pagination buttons styling */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+    transform: scale(1.05);
+  }
+  
+  .prev-btn, .next-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+  
+  .page-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    border-color: #ccc;
+    color: #333;
+  }
+  
+  .page-btn:hover {
+    background-color: #e0e0e0;
+    border-color: #bbb;
+  }
+  
+  /* Make sure pagination buttons are centered */
+  .pagination .btn {
+    display: inline-block;
+  }
+  
+
+  .renderFoodDetail .food-detail img {
+    width: 100px; /* Ensures the image does not exceed the container's width */
+    height: 300px; /* Keeps the aspect ratio intact */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
